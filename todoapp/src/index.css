@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: StardewFont; src: url('resources/StardewValley.ttf');}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    background-color: black;
+    background: url('/backg.png') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+h2 {
+    font-family: StardewFont
+}
+
+.custom-font {
+  font-family: 'StardewFont', sans-serif; 
+}
+
+.bg-woodBrown {
+    background-color: #deb887;
+  }
+  
+  /* Add these classes to your existing Tailwind CSS file */
+.stardew-background {
+    background-color: #88a4d8; /* Light blue background reminiscent of Stardew Valley */
+  }
+  
+  .stardew-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  }
+  
+  .stardew-text {
+    color: #2b2118; /* Dark brown text color */
+  }
+  
+  .stardew-button {
+    background-color: #88a4d8; /* Light blue button background */
+    color: #ffffff; /* White text color */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .stardew-button:hover {
+    background-color: #5e8ab6; /* Darker blue on hover */
+  }
+  
