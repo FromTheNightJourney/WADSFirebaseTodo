@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import TodoList from './TodoList';
 import FilterButtons from './FilterButtons';
-import UserInfoPopup from './UserInfoPopup'; // Import the UserInfoPopup component
+import UserInfoPopup from './UserInfoPopup'; 
 import { addTodo, updateSearchTerm } from '../redux/actions';
 import { collection, addDoc } from 'firebase/firestore';
 import { auth, db } from '../components/firebase';
@@ -35,7 +35,6 @@ const Todo = () => {
   return (
     <div className="max-w-4xl mx-auto sm:mt-8 p-4 bg-woodBrown rounded" style={{ border: '3px solid #deb887' }}>
       <h2 className='mt-3 mb-6 text-2xl font-bold text-center uppercase'>★ The ToDew List ★</h2>
-      {/* Place UserInfoPopup under the title and center it */}
       <div className="text-center mb-4">
         <UserInfoPopup />
       </div>

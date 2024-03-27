@@ -25,14 +25,14 @@ const TodoList = () => {
     }
   }, []);
 
-  // Filter todos based on the current filter state
+  // filter  based on the current state
   const filteredTodos = todos.filter(todo => {
     if (currentFilter === 'COMPLETED') {
       return todo.completed;
     } else if (currentFilter === 'INCOMPLETE') {
       return !todo.completed;
     } else {
-      return true; // Return all todos for 'ALL' filter
+      return true; 
     }
   });
 
@@ -48,7 +48,7 @@ const TodoList = () => {
       try {
         const docRef = await addDoc(collection(db, 'todos'), todoData);
         const newTodo = { id: docRef.id, ...todoData };
-        setTodos([...todos, newTodo]); // Update local state immediately
+        setTodos([...todos, newTodo]); 
       } catch (error) {
         console.error('Error adding todo: ', error);
       }

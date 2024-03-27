@@ -9,7 +9,6 @@ const UserInfoPopup = () => {
   
   useEffect(() => {
     if (currentUser) {
-      // Retrieve user's email, ID, and date joined
       const { email, uid, metadata: { creationTime } } = currentUser;
       setUserInfo({ email, uid, creationTime });
     }

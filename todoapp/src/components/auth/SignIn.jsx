@@ -24,12 +24,12 @@ const SignIn = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
             .then((result) => {
-                // Handle successful Google sign-in
+                // successful Google sign-in
                 const user = result.user;
                 console.log("Google sign-in successful:", user);
             })
             .catch((error) => {
-                // Handle errors
+                // errors
                 console.error("Google sign-in error:", error);
             });
     };
